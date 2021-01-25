@@ -24,3 +24,7 @@ Route::get('/planeta/{id}', [\App\Http\Controllers\PlanetasController::class, 'b
 Route::get('/naves', [\App\Http\Controllers\NavesController::class, 'todasLasNaves']);
 
 Route::get('/nave/{id}', [\App\Http\Controllers\NavesController::class, 'buscarNave']);
+
+Route::get('/armas', [\App\Http\Controllers\ArmasController::class, 'todasLasArmas']);
+
+Route::get('/arma/{id}', [\App\Http\Controllers\ArmasController::class, 'buscarArma']);
