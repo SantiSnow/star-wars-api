@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/planetas', [\App\Http\Controllers\PlanetasController::class, 'todosLosPlanetas']);
+
+Route::get('/planeta/{id}', [\App\Http\Controllers\PlanetasController::class, 'buscarPlaneta']);
