@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Planeta;
-use Illuminate\Http\Request;
 
 class PlanetasController extends Controller
 {
