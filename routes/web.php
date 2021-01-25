@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/planetas', [\App\Http\Controllers\PlanetasController::class, 'todosLosPlanetas']);
 
 Route::get('/planeta/{id}', [\App\Http\Controllers\PlanetasController::class, 'buscarPlaneta']);
+
+Route::get('/naves', [\App\Http\Controllers\NavesController::class, 'todasLasNaves']);
+
+Route::get('/nave/{id}', [\App\Http\Controllers\NavesController::class, 'buscarNave']);
